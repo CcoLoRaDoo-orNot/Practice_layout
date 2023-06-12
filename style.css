@@ -3,6 +3,7 @@
     --color-2: white;
     --color-3: #699dea;
     --color-4: #e6e7e7c0;
+    --color-5: #d1d1d1;
 }
 
 * {
@@ -51,6 +52,22 @@ button {
     background-color: var(--color-4);
     font-weight: 300;
     font-size: 15px;
+
+    transition: background-color 0.75s ease;
+}
+
+button:hover {
+    background-color: var(--color-5);
+}
+
+button[data-command="="]:hover {
+    background-color: aquamarine;
+    color: #fa93a8;
+}
+
+button[data-command="C"]:hover {
+    background-color: #ff7e98;
+    color: aquamarine;
 }
 
 .screen {
